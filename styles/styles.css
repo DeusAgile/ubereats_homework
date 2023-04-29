@@ -305,6 +305,7 @@ footer .copyright {
     border-radius: 1px;
 
     font-size: 11px;
+    white-space: nowrap;
 
     display: flex;
     flex-flow: row nowrap;
@@ -351,6 +352,11 @@ footer .copyright {
     main .choose_location {
         display: flex;
     }
+
+    footer .copyright {
+        justify-content: space-between;
+        gap: 0;
+    }
 }
 
 @media screen and (max-width: 412px) {
@@ -371,5 +377,9 @@ footer .copyright {
 
     footer .info {
         flex-flow: column nowrap;
+    }
+
+    nav .cart {
+        display: none;
     }
 }
