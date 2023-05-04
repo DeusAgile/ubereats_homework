@@ -24,12 +24,12 @@ button {
 
 body {
     margin: 0px auto;
-    font-family: 'Roboto' !important;
+    font-family: 'Roboto';
     font-weight: 400;
     font-size: 16px;
 }
 
-nav {
+header {
     height: 72px;
     max-width: 100%;
 
@@ -52,13 +52,6 @@ footer {
     padding: 56px 0 0 0;
 }
 
-#nav_auth {
-    font-size: 13px;
-    display: flex;
-    flex-flow: row nowrap;
-    gap: 16px;
-}
-
 .container {
     height: 100%;
     max-width: 1000px;
@@ -67,23 +60,17 @@ footer {
     padding: 0 8px;
 }
 
-/* navigation panel */
 
-nav .container {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-content: space-between;
-}
+/* Misc */
 
-.white__button {
-    background-color: transparent;
+.btn__whitestyle {
+    background-color: var(--main-color);
     border-color: var(--lgray-text);
     border-radius: 2px;
     padding: 8px 12px;
 }
 
-.black__button {
+.btn__blackstyle {
     background-color: var(--accent-color);
     border-color: var(--accent-color);
     border-radius: 2px;
@@ -91,15 +78,29 @@ nav .container {
     color: white;
 }
 
-.bold__weight {
+.bold-weight {
     font-weight: 500;
 }
 
-.thin__weight {
+.thin-weight {
     font-weight: 300;
 }
 
-.nav__input {
+
+/* header */
+
+header .container {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__location {
+    position: relative;
+}
+
+.location_input {
     padding: 8px 72px 8px 36px;
 
     background-color: transparent;
@@ -110,26 +111,34 @@ nav .container {
     max-width: 292px;
 }
 
-.choose_location {
-    position: relative;
-}
-
-.location {
+.location_img {
     height: 15px;
     position: absolute;
     top: 15px;
     padding-left: 12px;
 }
 
-.cart {
+.header__auth {
+    font-size: 13px;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 16px;
+}
+
+.header__auth_cart {
     padding: 7px;
     background-color: transparent;
     border-style: none;
 }
 
+
 /* main content */
 
-.search {
+main .btn__whitestyle {
+    background-color: transparent;
+}
+
+.main__search {
     padding-bottom: 17px;
     border-bottom: 1px solid #757575;
     border-radius: 1px;
@@ -141,7 +150,7 @@ nav .container {
     gap: 8px;
 }
 
-.search input {
+.main__search_input {
     border-style: none;
     font-size: 16px;
     width: 100%;
@@ -151,7 +160,8 @@ nav .container {
     outline-offset: 0;
 }
 
-main .choose_location {
+.main__location {
+    position: relative;
     display: none;
     margin-top: 20px;
 
@@ -159,48 +169,43 @@ main .choose_location {
 
     flex-flow: column wrap;
     column-gap: 5px;
-    gap: 5px;
 }
 
-.catalog {
+.main__catalog {
     margin: 8px 0 92px 0;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
 }
 
-.catalog a {
-    color: inherit;
-    text-decoration: none;
-}
-
-.card {
+.main__catalog_card {
     width: 32%;
     padding: 8px 4px 8px 4px;
 }
 
-.card img {
+.catalog_card-img {
     width: 100%;
 }
 
-.card .restaurant {
+.catalog_card-restaurant {
     margin-top: 16px
 }   
 
-.card .info {
+.catalog_card-info {
     margin-top: 4px;
     font-size: 14px;
     color: var(--gray-text);
 }
 
-.card .time {
+.catalog_card-time {
     margin-top: 4px;
     font-size: 13px;
 }
 
+
 /* footer */
 
-footer .info {
+.footer__info {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -212,7 +217,7 @@ footer .info {
     border-radius: 1px;
 }
 
-footer .info .block {
+.footer__info_block {
     display: flex;
     flex-flow: column nowrap;
     margin-top: 40px;
@@ -221,31 +226,31 @@ footer .info .block {
     font-size: 13px;
 }
 
-footer .info .block a:not(:first-child){
+.footer__info_block a:not(:first-child){
     margin-top: 23px;
 }
 
-.hashtag {
+.info_hashtag {
     margin-top: 33px;
     font-size: 16px;
 }
 
-.hashtag .hash {
+.info_hashtag-hash {
     color: var(--second-textcolor);
 }
 
-.socials {
+.info_socials {
     margin-top: 17px;
     display: flex;
     flex-flow: row nowrap;
     gap: 15px;
 }
 
-.socials a{
+.info_socials a{
     margin: 0px !important;
 }
 
-.socials a i{
+.info_socials a i{
     font-size: 20px;
     color: var(--white-text);
 }
@@ -285,7 +290,7 @@ footer .info .block a:not(:first-child){
     align-items: center;
 }
 
-footer .downloads {
+.footer__downloads {
     margin-top: 40px;
     padding-top: 40px;
     border-top: 1px solid #757575;
@@ -298,7 +303,7 @@ footer .downloads {
     gap: 40px;
 }
 
-footer .copyright {
+.footer__copyright {
     margin-top: 40px;
     padding: 40px 0;
     border-top: 1px solid #757575;
@@ -313,73 +318,94 @@ footer .copyright {
 
 }
 
+/* btn-up */
+
+.btn-up {
+    position: fixed;
+    background-color: green;
+    right: 25px;
+    bottom: 25px;
+    border-radius: 5px;
+    border-style: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px;
+    z-index: 100;
+  }
+  
+  .btn-up_hide {
+    display: none;
+  }
+
 @media screen and (max-width: 768px) {
 
     body, main {
         background-color: var(--second-color);
     }
 
-    .logo img {
+    .header__logo_img {
         height: 11px;
     }
 
-    .card {
+    .main__catalog_card {
         width: 47%;
     }
 
-    .location {
+    .location_img {
         top: 30px;
         padding: 0;
     }
 
-    .choose_location {
-        font-size: 13px;
-    }
-
-    .nav__input {
+    .location_input {
         max-width: 100%;
-        padding: 8px 30px 8px 36px;;
+        padding: 8px 30px 8px 8px;;
     }
 
-    #nav_auth {
+    .header__auth {
         gap: 8px
     }
 
-    nav .choose_location {
+    .header__location {
         display: none;
     }
 
-    main .choose_location {
+    .main__location {
         display: flex;
     }
 
-    footer .copyright {
+    .footer__copyright {
         justify-content: space-between;
         gap: 0;
+    }
+
+    .btn-up {
+        display: none;
     }
 }
 
 @media screen and (max-width: 412px) {
 
-    .card {
+    .main__catalog_card {
         width: 98%;
     }
 
-    footer .downloads {
+    .footer__downloads {
         justify-content: space-around;
         gap: 0;
     }
 
-    footer .copyright {
+    .footer__copyright {
         flex-flow: column nowrap;
         gap: 24px;
     }
 
-    footer .info {
+    .footer__info {
         flex-flow: column nowrap;
     }
 
-    nav .cart {
+    .header__auth_cart {
         display: none;
     }
 }

@@ -7,92 +7,93 @@
     <title>UberEats</title>
     <link rel="stylesheet" href="/styles/styles.css">
     <script src="https://kit.fontawesome.com/9563718032.js" crossorigin="anonymous"></script>
+    <script src="/scripts/btn-up.js"></script>
 </head>
 <body>
-    <nav>
+    <header>
         <div class="container">
-            <div id="nav_logo", class="logo">
-                <img src="/src/img/logos/logo.svg", alt="Logo">
+            <div class="header__logo">
+                <a href="#"><img class="header__logo_img" src="/src/img/logos/logo.svg", alt="Logo"></a>
             </div>
-            <div id="nav_location", class="choose_location">
-                <button class="white__button"><span>ASAP</span></button>
-                <span class="thin__weight", style="color: var(--gray-text)">to
-                    <img class="location", src="/src/img/geo-alt.svg" alt="">
+            <div class="header__location">
+                <button class="btn__whitestyle"><span>ASAP</span></button>
+                <span class="thin-weight", style="color: var(--gray-text)">to
+                    <img class="location_img", src="/src/img/geo-alt.svg" alt="">
                 </span>
-                <input class="nav__input", type="text" name="location" id="">
+                <input class="location_input", type="text" name="location" id="">
             </div>
-            <div id="nav_auth", class="buttons_block">
-                <button class="white__button bold__weight">Sign in</button>
-                <button class="black__button bold__weight">Register</button>
-                <button class="cart"><img src="/src/img/bag.svg", alt="Cart"></button>
+            <div class="header__auth">
+                <button class="btn__whitestyle bold-weight">Sign in</button>
+                <button class="btn__blackstyle bold-weight">Register</button>
+                <button class="header__auth_cart"><img src="/src/img/bag.svg", alt="Cart"></button>
             </div>
         </div>
-    </nav>
+    </header>
     <main>
         <div class="container">
-            <div class="search">
+            <div class="main__search">
                 <img style="height: 22px;" src="/src/img/search.svg" alt="">
-                <input class="" type="search" placeholder="Search for restaurant or cuisine" name="search" id="">
+                <input class="main__search_input" type="search" placeholder="Search for restaurant or cuisine" name="search" id="">
             </div>
             <div>
-                <div class="choose_location">
-                    <span class="thin__weight", style="color: var(--gray-text)">When</span>
-                    <button class="white__button"><span>ASAP</span></button>
-                    <span class="thin__weight", style="color: var(--gray-text)">to
-                        <img class="location", src="/src/img/geo-alt.svg" alt="">
+                <div class="main__location">
+                    <span class="thin-weight", style="color: var(--gray-text)">When</span>
+                    <button class="btn__whitestyle"><span>ASAP</span></button>
+                    <span class="thin-weight", style="color: var(--gray-text)">to
+                        <img class="location_img", src="/src/img/geo-alt.svg" alt="">
                     </span>
-                    <input class="nav__input", type="text" name="location" id="">
+                    <input class="location_input", type="text" name="location" id="">
                 </div>
             </div>
             <div>
                 <div style="font-size: 22px; padding-left: 4px; margin-top: 56px;">Moscow restaurans</div>
-                <div class="catalog">
-                    <div class="card">
+                <div class="main__catalog">
+                    <div class="main__catalog_card">
                         <a  href="#">
-                            <img src="/src/img/95b745f6ce6a45903c3ed254afd72e46-w550-27.jpg", alt="image">
-                            <div class="restaurant"><span>Макдак - Газетный</span></div>
-                            <div class="info"><span>₽₽</span> • <span>Бургеры</span></div>
-                            <div class="time"><span>25 - 35 Min</span></div>
+                            <img class="catalog_card-img" src="/src/img/95b745f6ce6a45903c3ed254afd72e46-w550-27.jpg", alt="image">
+                            <div class="catalog_card-restaurant"><span>Макдак - Газетный</span></div>
+                            <div class="catalog_card-info"><span>₽₽</span> • <span>Бургеры</span></div>
+                            <div class="catalog_card-time"><span>25 - 35 Min</span></div>
                         </a>
                     </div>
-                    <div class="card">
+                    <div class="main__catalog_card">
                         <a  href="#">
-                            <img src="/src/img/95b745f6ce6a45903c3ed254afd72e46-w550-27.jpg", alt="image">
-                            <div class="restaurant"><span>Макдак - Газетный</span></div>
-                            <div class="info"><span>₽₽</span> • <span>Бургеры</span></div>
-                            <div class="time"><span>25 - 35 Min</span></div>
+                            <img class="catalog_card-img" src="/src/img/95b745f6ce6a45903c3ed254afd72e46-w550-27.jpg", alt="image">
+                            <div class="catalog_card-restaurant"><span>Макдак - Газетный</span></div>
+                            <div class="catalog_card-info"><span>₽₽</span> • <span>Бургеры</span></div>
+                            <div class="catalog_card-time"><span>25 - 35 Min</span></div>
                         </a>
                     </div>
-                    <div class="card">
+                    <div class="main__catalog_card">
                         <a  href="#">
-                            <img src="/src/img/95b745f6ce6a45903c3ed254afd72e46-w550-27.jpg", alt="image">
-                            <div class="restaurant"><span>Макдак - Газетный</span></div>
-                            <div class="info"><span>₽₽</span> • <span>Бургеры</span></div>
-                            <div class="time"><span>25 - 35 Min</span></div>
+                            <img class="catalog_card-img" src="/src/img/95b745f6ce6a45903c3ed254afd72e46-w550-27.jpg", alt="image">
+                            <div class="catalog_card-restaurant"><span>Макдак - Газетный</span></div>
+                            <div class="catalog_card-info"><span>₽₽</span> • <span>Бургеры</span></div>
+                            <div class="catalog_card-time"><span>25 - 35 Min</span></div>
                         </a>
                     </div>
-                    <div class="card">
+                    <div class="main__catalog_card">
                         <a  href="#">
-                            <img src="/src/img/95b745f6ce6a45903c3ed254afd72e46-w550-27.jpg", alt="image">
-                            <div class="restaurant"><span>Макдак - Газетный</span></div>
-                            <div class="info"><span>₽₽</span> • <span>Бургеры</span></div>
-                            <div class="time"><span>25 - 35 Min</span></div>
+                            <img class="catalog_card-img" src="/src/img/95b745f6ce6a45903c3ed254afd72e46-w550-27.jpg", alt="image">
+                            <div class="catalog_card-restaurant"><span>Макдак - Газетный</span></div>
+                            <div class="catalog_card-info"><span>₽₽</span> • <span>Бургеры</span></div>
+                            <div class="catalog_card-time"><span>25 - 35 Min</span></div>
                         </a>
                     </div>
-                    <div class="card">
+                    <div class="main__catalog_card">
                         <a  href="#">
-                            <img src="/src/img/95b745f6ce6a45903c3ed254afd72e46-w550-27.jpg", alt="image">
-                            <div class="restaurant"><span>Макдак - Газетный</span></div>
-                            <div class="info"><span>₽₽</span> • <span>Бургеры</span></div>
-                            <div class="time"><span>25 - 35 Min</span></div>
+                            <img class="catalog_card-img" src="/src/img/95b745f6ce6a45903c3ed254afd72e46-w550-27.jpg", alt="image">
+                            <div class="catalog_card-restaurant"><span>Макдак - Газетный</span></div>
+                            <div class="catalog_card-info"><span>₽₽</span> • <span>Бургеры</span></div>
+                            <div class="catalog_card-time"><span>25 - 35 Min</span></div>
                         </a>
                     </div>
-                    <div class="card">
+                    <div class="main__catalog_card">
                         <a  href="#">
-                            <img src="/src/img/95b745f6ce6a45903c3ed254afd72e46-w550-27.jpg", alt="image">
-                            <div class="restaurant"><span>Макдак - Газетный</span></div>
-                            <div class="info"><span>₽₽</span> • <span>Бургеры</span></div>
-                            <div class="time"><span>25 - 35 Min</span></div>
+                            <img class="catalog_card-img" src="/src/img/95b745f6ce6a45903c3ed254afd72e46-w550-27.jpg", alt="image">
+                            <div class="catalog_card-restaurant"><span>Макдак - Газетный</span></div>
+                            <div class="catalog_card-info"><span>₽₽</span> • <span>Бургеры</span></div>
+                            <div class="catalog_card-time"><span>25 - 35 Min</span></div>
                         </a>
                     </div>
                 </div>
@@ -102,8 +103,8 @@
     <footer>
         <div class="container">
             <img src="/src/img/logos/white-logo.svg" alt="white-logo">
-            <div class="info">
-                <div class="block">
+            <div class="footer__info">
+                <div class="footer__info_block">
                     <div class="localization">
                         <button class="accordion">
                             <div>
@@ -113,37 +114,38 @@
                             <i class="fa-solid fa-chevron-down"></i>
                         </button>
                     </div>
-                    <div class="hashtag">
-                        <span class="hash">#</span><span class="tag">UberEats</span>
+                    <div class="info_hashtag">
+                        <span class="info_hashtag-hash">#</span><span class="tag">UberEats</span>
                     </div>
-                    <div class="socials">
+                    <div class="info_socials">
                         <a href="#"><i class="fa-brands fa-facebook"></i></a>
                         <a href="#"><i class="fa-brands fa-twitter"></i></a>
                         <a href="#"><i class="fa-brands fa-instagram"></i></a>
                     </div>
                 </div>
-                <div class="block">
+                <div class="footer__info_block">
                     <a href="#">About UberEats</a>
                     <a href="#">Become a Delivery Partner</a>
                     <a href="#">Become a Restaurant Partner</a>
                 </div>
-                <div class="block">
+                <div class="footer__info_block">
                     <a href="#">See all cities</a>
                     <a href="#">Pricing</a>
                     <a href="#">Help</a>
                     <a href="#">FAQs</a>
                 </div>
             </div>
-            <div class="downloads">
+            <div class="footer__downloads">
                 <img src="/src/img/Group.png" alt="appstore">
                 <img src="/src/img/en_badge_web_generic-cf6dad406f.png" alt="googleplay">
             </div>
-            <div class="copyright">
+            <div class="footer__copyright">
                 <span>© 2017 Uber Technologies Inc.</span>
                 <a href="#">Privacy</a>
                 <a href="#">Terms</a>
             </div>
         </div>
     </footer>
+    <button id="btn_up" class="btn-up"><i class="fa-solid fa-chevron-up" style="color: #ffffff; font-size: 30px;"></i></button>
 </body>
 </html>
